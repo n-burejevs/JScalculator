@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="myScript.js"></script> 
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    
+    <body>
+        <div class="calc-body">     
+            <div class="calc-screen">
+                <div ><p id="screen-top"></p></div>
+                <div ><p id="screen-bottom"></p></div>
+            </div>
+          <div class="row-operators">
+              <button onclick ="button_press('+')"  >+</button>
+             <button onclick ="button_press('-')" > - </button>
+              <button onclick ="button_press('*')">*</button>
+               <button onclick ="button_press('/')" >/</button>
+               
+        </div>
+        <div class="row-7-8-9">
+            <button onclick ="button_press(7)" >7</button>
+             <button onclick ="button_press(8)">8</button>
+              <button onclick ="button_press(9)" >9</button>
+              <button onclick ="button_press('=')" >=</button>
+        </div>
+        <div class="row-4-5-6">
+             <button onclick ="button_press(4)">4</button>
+             <button onclick ="button_press(5)">5</button>
+              <button onclick ="button_press(6)">6</button>
+              <button onclick ="button_press('C')">C</button>
+        </div>
+        <div class="row-1-2-3">
+             <button id="one" onclick ="button_press(1)" >1</button>
+             <button onclick ="button_press(2)">2</button>
+              <button onclick ="button_press(3)">3</button>
+               
+        </div>
+             <div class="row-0-.-<-">
+             
+             <button onclick ="button_press(0)">0</button>
+             <button onclick ="button_press('.')" >.</button>
+             <button onclick ="button_press('<-')" ><-</button>
+             
+        </div>
+            
+           </div>   
+    
+    </body>
+</html>

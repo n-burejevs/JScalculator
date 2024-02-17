@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 11, 2023, 9:23:45 PM
+    Author     : shark
+*/
+
+.calc-screen
+{
+    height: 40px;
+    background-color: olivedrab;
+     border-style: ridge;
+     margin-bottom: 5px;
+    display: grid;
+    text-align: right;
+}
+
+/*#screen-top
+{
+  margin: 0;
+    padding: 0;
+}*/
+
+/*#screen-bottom
+{
+ margin: 0;
+    padding: 0;
+}
+*/
+.calc-body
+{
+    border-style: ridge;
+    width: 100px;
+    
+}
+
+.row-operators
+{
+   display: inline-block;
+}
+
+button
+{
+    margin-left: 2px;
+    margin-top: 2px;
+}
