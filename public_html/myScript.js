@@ -60,7 +60,7 @@ function button_press(input)
           
             document.getElementById("screen-bottom").innerHTML = number;
      }
-    // code block
+    
     break;
      case '=':
      {// 
