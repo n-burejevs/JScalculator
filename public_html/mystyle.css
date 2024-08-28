@@ -13,11 +13,19 @@ and open the template in the editor.
     height: 40px;
     background-color: olivedrab;
      border-style: ridge;
-     margin-bottom: 5px;
-    display: grid;
-    text-align: right;
+     margin-bottom: 4px;
+     display: grid;   
+              grid-template-rows: 5px 5px;
+              row-gap: 10px;
+              justify-content: right;
+              position: relative;      
+              
 }
-
+#operator-sign{
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
 
 .calc-body
 {
@@ -26,13 +34,16 @@ and open the template in the editor.
     
 }
 
-.row-operators
+.row-operators, .row-7-8-9, .row-4-5-6, .row-1-2-3, .row-0-
 {
-   display: inline-block;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+      
 }
 
 button
 {
-    margin-left: 2px;
-    margin-top: 2px;
+    margin: 2px;
+   
 }

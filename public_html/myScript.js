@@ -11,6 +11,8 @@ var operator = "";
 //input is used!
 function button_press(input)
 {
+    document.getElementById("operator-sign").innerHTML = operator;
+    
     switch(input) {
         case 'C':
            result = "";
@@ -62,6 +64,22 @@ function button_press(input)
      }
     
     break;
+    case '.':
+     {//ignore additional dots: 1..5 -> 1.5
+         //no dot shold be displayed if there is no number infront
+           if(number==="")
+          {
+              break;
+          }
+        else if(number.charAt(number.length-1)!=='.')
+          {
+            number += input.toString(10);
+            document.getElementById("screen-bottom").innerHTML = number;
+            console.log("debug");  
+          }
+     }
+    break;
+    
      case '=':
      {// 
     number = document.getElementById("screen-bottom").innerHTML;
@@ -128,7 +146,7 @@ function button_press(input)
       
     number += input.toString(10);
         document.getElementById("screen-bottom").innerHTML = number;
-  
+      
   }
 } 
   

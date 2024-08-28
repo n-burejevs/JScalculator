@@ -16,8 +16,9 @@ and open the template in the editor.
     <body>
         <div class="calc-body">     
             <div class="calc-screen">
-                <div ><p id="screen-top"></p></div>
-                <div ><p id="screen-bottom"></p></div>
+                <div id="screen-top"></div>
+                <div id="screen-bottom"></div>
+                <div id="operator-sign"> </div>
             </div>
           <div class="row-operators">
               <button onclick ="button_press('+')"  >+</button>
@@ -44,7 +45,7 @@ and open the template in the editor.
               <button onclick ="button_press(3)">3</button>
                
         </div>
-             <div class="row-0-.-<-">
+             <div class="row-0-">
              
              <button onclick ="button_press(0)">0</button>
              <button onclick ="button_press('.')" >.</button>
